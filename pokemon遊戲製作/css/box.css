@@ -1,0 +1,98 @@
+*{box-sizing: border-box;}
+body { height: 100%; padding: 0; margin: 0; } /* 解決顯示全版問題 */
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "box1 box2 box3 box4 box5 box6"
+    "box7 box8 box9 box10 box11 box12";
+}
+
+.full_page {
+    background-color: black;
+    height:100vh;
+}
+.que_box {
+    width: 100%;
+}
+
+#box1 {
+    background-color: rosybrown;
+    grid-area: box1;
+    /* border:maroon 10px solid; */
+}
+
+#box2 {
+    background-color: royalblue;
+    grid-area: box2;
+}
+
+#box3 {
+    background-color: sandybrown;
+    grid-area: box3;
+}
+
+#box4 {
+    background-color:salmon;
+    grid-area: box4;
+}
+
+#box5 {
+    background-color: slateblue;
+    grid-area: box5;
+}
+
+#box6 {
+    background-color: #04AA6D;
+    grid-area: box6;
+}
+
+#box7 {
+    background-color: sienna;
+    grid-area: box7;
+}
+
+#box8 {
+    background-color: yellowgreen;
+    grid-area: box8;
+}
+
+#box9 {
+    background-color: teal;
+    grid-area: box9;
+}
+
+#box10 {
+    background-color: turquoise;
+    grid-area: box10;
+}
+
+#box11 {
+    background-color: brown;
+    grid-area: box11;
+}
+
+#box12 {
+    background-color: white;
+    grid-area: box12;
+}
+
+.container {
+    position: relative;
+    /* 決定圖片大小 */
+}
+
+.bottom_left {
+    background-color: black;
+    float: left;
+    width: 50%;
+    height: 30vh;
+}
+.bottom_right {
+    background-color:black;
+    float: right;
+    width: 50%;
+    height: 30vh;
+    text-align: center;
+}

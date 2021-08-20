@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonGuess</title>
+    <script src="./_js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/box.css">
+    <link rel="stylesheet" href="./css/que_ans.css">
+</head>
+
+<body>
+    <script src="./_js/pokemon.js"></script>
+    <div class="full_page">
+        <div class="box">
+            <div id="box1" class="que_box">
+                <div class="container">
+                    <img id="que_img1" class="que_img" alt="que1">
+                    <div id="overlay1" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption1" class="caption">
+                        <input type="text" size="30vw" placeholder="我是誰???">
+                        <br><button id="ansBtn_1" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn1" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn1" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box2" class="que_box">
+                <div class="container">
+                    <img id="que_img2" class="que_img" alt="que1">
+                    <div id="overlay2" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img2">
+
+                    <div id="caption2" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_2" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn2" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn2" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box3" class="que_box">
+                <div class="container">
+                    <img id="que_img3" class="que_img" alt="que1">
+                    <div id="overlay3" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal3" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img3">
+
+                    <div id="caption3" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_3" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn3" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn3" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box4" class="que_box">
+                <div class="container">
+                    <img id="que_img4" class="que_img" alt="que1">
+                    <div id="overlay4" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal4" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img4">
+
+                    <div id="caption4" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_4" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn4" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn4" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box5" class="que_box">
+                <div class="container">
+                    <img id="que_img5" class="que_img" alt="que1">
+                    <div id="overlay5" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal5" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img5">
+
+                    <div id="caption5" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_5" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn5" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn5" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第6格功能格 -->
+            <div id="box6" class="que_box">
+                <div class="container">
+                    <button id="resetBtn"><img id="resetImg" src="./img/reset.png"></button>
+                </div>
+            </div>
+
+            <div id="box7" class="que_box">
+                <div class="container">
+                    <img id="que_img6" class="que_img" alt="que1">
+                    <div id="overlay6" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal6" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img6">
+
+                    <div id="caption6" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_6" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn6" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn6" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box8" class="que_box">
+                <div class="container">
+                    <img id="que_img7" class="que_img" alt="que1">
+                    <div id="overlay7" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal7" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img7">
+
+                    <div id="caption7" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_7" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn7" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn7" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box9" class="que_box">
+                <div class="container">
+                    <img id="que_img8" class="que_img" alt="que1">
+                    <div id="overlay8" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal8" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img8">
+
+                    <div id="caption8" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_8" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn8" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn8" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box10" class="que_box">
+                <div class="container">
+                    <img id="que_img9" class="que_img" alt="que1">
+                    <div id="overlay9" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal9" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img9">
+
+                    <div id="caption9" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_9" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn9" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn9" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="box11" class="que_box">
+                <div class="container">
+                    <img id="que_img10" class="que_img" alt="que1">
+                    <div id="overlay10" class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal10" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img10">
+
+                    <div id="caption10" class="caption">
+                        <input type="text" size="30vw">
+                        <br><button id="ansBtn_10" class="ansBtn">Answer</button>
+                        <br><button id="hintBtn10" class="hintBtn" onclick="this.disabled=true">Hint >>進化</button>
+                        <button id="hint2Btn10" class="hintBtn2" onclick="this.disabled=true">Hint >>名字</button>
+                        <!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 第12格功能格 -->
+            <div id="box12" class="que_box">
+                <div>
+                    <img id="hintImg" src="./img/Hint3.gif">
+                </div>
+            </div>
+        </div>
+        <div class="bottom_left">
+            <p id="demo"></p>
+        </div>
+        <div class="bottom_right">
+            <button class="submitbtn">Submit</button>
+        </div>
+    </div>
+
+    <script src="./_js/function.js"></script>
+</body>
+
+</html>

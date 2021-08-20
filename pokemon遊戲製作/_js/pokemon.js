@@ -1,0 +1,761 @@
+var pokemon = [{
+    name: "0",
+    oriType: "",
+    typeN: 0,
+}, {
+    n: 1,
+    name: "妙蛙種子",
+    oriType: 1,
+    typeN: 3,
+}, {
+    n: 2,
+    name: "妙蛙草",
+    oriType: 1,
+    typeN: 3,
+}, {
+    n: 3,
+    name: "妙蛙花",
+    oriType: 1,
+    typeN: 3,
+}, {
+    n: 4,
+    name: "小火龍",
+    oriType: 4,
+    typeN: 3,
+}, {
+    n: 5,
+    name: "火恐龍",
+    oriType: 4,
+    typeN: 3,
+}, {
+    n: 6,
+    name: "噴火龍",
+    oriType: 4,
+    typeN: 3,
+}, {
+    n: 7,
+    name: "傑尼龜",
+    oriType: 7,
+    typeN: 3,
+}, {
+    n: 8,
+    name: "卡咪龜",
+    oriType: 7,
+    typeN: 3,
+}, {
+    n: 9,
+    name: "水箭龜",
+    oriType: 7,
+    typeN: 3,
+}, {
+    n: 10,
+    name: "綠毛蟲",
+    oriType: 10,
+    typeN: 3,
+}, {
+    n: 11,
+    name: "鐵甲蛹",
+    oriType: 10,
+    typeN: 3,
+}, {
+    n: 12,
+    name: "巴大蝶",
+    oriType: 10,
+    typeN: 3,
+}, {
+    n: 13,
+    name: "獨角蟲",
+    oriType: 13,
+    typeN: 3,
+}, {
+    n: 14,
+    name: "鐵殼昆",
+    oriType: 13,
+    typeN: 3,
+}, {
+    n: 15,
+    name: "大針蜂",
+    oriType: 13,
+    typeN: 3,
+}, {
+    n: 16,
+    name: "波波",
+    oriType: 16,
+    typeN: 3,
+}, {
+    n: 17,
+    name: "比比鳥",
+    oriType: 16,
+    typeN: 3,
+}, {
+    n: 18,
+    name: "比雕",
+    oriType: 16,
+    typeN: 3,
+}, {
+    n: 19,
+    name: "小拉達",
+    oriType: 19,
+    typeN: 2,
+}, {
+    n: 20,
+    name: "拉達",
+    oriType: 19,
+    typeN: 2,
+}, {
+    n: 21,
+    name: "烈雀",
+    oriType: 21,
+    typeN: 2,
+}, {
+    n: 22,
+    name: "大嘴雀",
+    oriType: 21,
+    typeN: 2,
+}, {
+    n: 23,
+    name: "阿柏蛇",
+    oriType: 23,
+    typeN: 2,
+}, {
+    n: 24,
+    name: "阿柏怪",
+    oriType: 23,
+    typeN: 2,
+}, {
+    n: 25,
+    name: "皮卡丘",
+    oriType: 25,
+    typeN: 2,
+}, {
+    n: 26,
+    name: "雷丘",
+    oriType: 25,
+    typeN: 2,
+}, {
+    n: 27,
+    name: "穿山鼠",
+    oriType: 27,
+    typeN: 2,
+}, {
+    n: 28,
+    name: "穿山王",
+    oriType: 27,
+    typeN: 2,
+}, {
+    n: 29,
+    name: "尼多蘭",
+    oriType: 29,
+    typeN: 3,
+}, {
+    n: 30,
+    name: "尼多娜",
+    oriType: 29,
+    typeN: 3,
+}, {
+    n: 31,
+    name: "尼多後",
+    oriType: 29,
+    typeN: 3,
+}, {
+    n: 32,
+    name: "尼多朗",
+    oriType: 32,
+    typeN: 3,
+}, {
+    n: 33,
+    name: "尼多力諾",
+    oriType: 32,
+    typeN: 3,
+}, {
+    n: 34,
+    name: "尼多王",
+    oriType: 32,
+    typeN: 3,
+}, {
+    n: 35,
+    name: "皮皮",
+    oriType: 35,
+    typeN: 2,
+}, {
+    n: 36,
+    name: "皮可西",
+    oriType: 35,
+    typeN: 2,
+}, {
+    n: 37,
+    name: "六尾",
+    oriType: 37,
+    typeN: 2,
+}, {
+    n: 38,
+    name: "九尾",
+    oriType: 37,
+    typeN: 2,
+}, {
+    n: 39,
+    name: "胖丁",
+    oriType: 39,
+    typeN: 2,
+}, {
+    n: 40,
+    name: "胖可丁",
+    oriType: 39,
+    typeN: 2,
+}, {
+    n: 41,
+    name: "超音蝠",
+    oriType: 41,
+    typeN: 2,
+}, {
+    n: 42,
+    name: "大嘴蝠",
+    oriType: 41,
+    typeN: 2,
+}, {
+    n: 43,
+    name: "走路草",
+    oriType: 43,
+    typeN: 3,
+}, {
+    n: 44,
+    name: "臭臭花",
+    oriType: 43,
+    typeN: 3,
+}, {
+    n: 45,
+    name: "霸王花",
+    oriType: 43,
+    typeN: 3,
+}, {
+    n: 46,
+    name: "派拉斯",
+    oriType: 45,
+    typeN: 2,
+}, {
+    n: 47,
+    name: "派拉斯特",
+    oriType: 45,
+    typeN: 2,
+}, {
+    n: 48,
+    name: "毛球",
+    oriType: 48,
+    typeN: 2,
+}, {
+    n: 49,
+    name: "末入蛾",
+    oriType: 48,
+    typeN: 2,
+}, {
+    n: 50,
+    name: "地鼠",
+    oriType: 50,
+    typeN: 2,
+}, {
+    n: 51,
+    name: "三地鼠",
+    oriType: 50,
+    typeN: 2,
+}, {
+    n: 52,
+    name: "喵喵",
+    oriType: 52,
+    typeN: 2,
+}, {
+    n: 53,
+    name: "貓老大",
+    oriType: 52,
+    typeN: 2,
+}, {
+    n: 54,
+    name: "可達鴨",
+    oriType: 54,
+    typeN: 2,
+}, {
+    n: 55,
+    name: "哥達鴨",
+    oriType: 54,
+    typeN: 2,
+}, {
+    n: 56,
+    name: "猴怪",
+    oriType: 56,
+    typeN: 2,
+}, {
+    n: 57,
+    name: "火爆猴",
+    oriType: 56,
+    typeN: 2,
+}, {
+    n: 58,
+    name: "卡蒂狗",
+    oriType: 58,
+    typeN: 2,
+}, {
+    n: 59,
+    name: "風速狗",
+    oriType: 58,
+    typeN: 2,
+}, {
+    n: 60,
+    name: "蚊香蝌蚪",
+    oriType: 60,
+    typeN: 3,
+}, {
+    n: 61,
+    name: "蚊香君",
+    oriType: 60,
+    typeN: 3,
+}, {
+    n: 62,
+    name: "快泳蛙",
+    oriType: 60,
+    typeN: 3,
+}, {
+    n: 63,
+    name: "凱西",
+    oriType: 63,
+    typeN: 3,
+}, {
+    n: 64,
+    name: "勇吉拉",
+    oriType: 63,
+    typeN: 3,
+}, {
+    n: 65,
+    name: "胡地",
+    oriType: 63,
+    typeN: 3,
+}, {
+    n: 66,
+    name: "腕力",
+    oriType: 66,
+    typeN: 3,
+}, {
+    n: 67,
+    name: "豪力",
+    oriType: 66,
+    typeN: 3,
+}, {
+    n: 68,
+    name: "怪力",
+    oriType: 66,
+    typeN: 3,
+}, {
+    n: 69,
+    name: "喇叭芽",
+    oriType: 69,
+    typeN: 3,
+}, {
+    n: 70,
+    name: "口呆花",
+    oriType: 69,
+    typeN: 3,
+}, {
+    n: 71,
+    name: "大食花",
+    oriType: 69,
+    typeN: 3,
+}, {
+    n: 72,
+    name: "瑪瑙水母",
+    oriType: 72,
+    typeN: 2,
+}, {
+    n: 73,
+    name: "毒刺水母",
+    oriType: 72,
+    typeN: 2,
+}, {
+    n: 74,
+    name: "小拳石",
+    oriType: 74,
+    typeN: 3,
+}, {
+    n: 75,
+    name: "隆隆石",
+    oriType: 74,
+    typeN: 3,
+}, {
+    n: 76,
+    name: "隆隆岩",
+    oriType: 74,
+    typeN: 3,
+}, {
+    n: 77,
+    name: "小火馬",
+    oriType: 77,
+    typeN: 2,
+}, {
+    n: 78,
+    name: "烈焰馬",
+    oriType: 77,
+    typeN: 2,
+}, {
+    n: 79,
+    name: "呆呆獸",
+    oriType: 79,
+    typeN: 2,
+}, {
+    n: 80,
+    name: "呆河馬",
+    oriType: 79,
+    typeN: 2,
+}, {
+    n: 81,
+    name: "小磁怪",
+    oriType: 81,
+    typeN: 2,
+}, {
+    n: 82,
+    name: "三合一磁怪",
+    oriType: 81,
+    typeN: 2,
+}, {
+    n: 83,
+    name: "大蔥鴨",
+    oriType: 83,
+    typeN: 1,
+}, {
+    n: 84,
+    name: "嘟嘟",
+    oriType: 84,
+    typeN: 2,
+}, {
+    n: 85,
+    name: "嘟嘟利",
+    oriType: 84,
+    typeN: 2,
+}, {
+    n: 86,
+    name: "小海獅",
+    oriType: 86,
+    typeN: 2,
+}, {
+    n: 87,
+    name: "白海獅",
+    oriType: 86,
+    typeN: 2,
+}, {
+    n: 88,
+    name: "臭泥",
+    oriType: 88,
+    typeN: 2,
+}, {
+    n: 89,
+    name: "臭臭泥",
+    oriType: 88,
+    typeN: 2,
+}, {
+    n: 90,
+    name: "大舌貝",
+    oriType: 90,
+    typeN: 2,
+}, {
+    n: 91,
+    name: "刺甲貝",
+    oriType: 90,
+    typeN: 2,
+}, {
+    n: 92,
+    name: "鬼斯",
+    oriType: 92,
+    typeN: 3,
+}, {
+    n: 93,
+    name: "鬼斯通",
+    oriType: 92,
+    typeN: 3,
+}, {
+    n: 94,
+    name: "耿鬼",
+    oriType: 92,
+    typeN: 3,
+}, {
+    n: 95,
+    name: "大岩蛇",
+    oriType: 95,
+    typeN: 1,
+}, {
+    n: 96,
+    name: "素利普",
+    oriType: 96,
+    typeN: 2,
+}, {
+    n: 97,
+    name: "素利柏",
+    oriType: 96,
+    typeN: 2,
+}, {
+    n: 98,
+    name: "大鉗蟹",
+    oriType: 98,
+    typeN: 2,
+}, {
+    n: 99,
+    name: "巨鉗蟹",
+    oriType: 98,
+    typeN: 2,
+}, {
+    n: 100,
+    name: "雷電球",
+    oriType: 100,
+    typeN: 2,
+}, {
+    n: 101,
+    name: "頑皮彈",
+    oriType: 100,
+    typeN: 2,
+}, {
+    n: 102,
+    name: "蛋蛋",
+    oriType: 102,
+    typeN: 2,
+}, {
+    n: 103,
+    name: "椰蛋樹",
+    oriType: 102,
+    typeN: 2,
+}, {
+    n: 104,
+    name: "卡拉卡拉",
+    oriType: 104,
+    typeN: 2,
+}, {
+    n: 105,
+    name: "嘎拉嘎拉",
+    oriType: 104,
+    typeN: 2,
+}, {
+    n: 106,
+    name: "沙瓦郎",
+    oriType: 106,
+    typeN: 2,
+}, {
+    n: 107,
+    name: "艾比郎",
+    oriType: 106,
+    typeN: 2,
+}, {
+    n: 108,
+    name: "大舌頭",
+    oriType: 108,
+    typeN: 1,
+}, {
+    n: 109,
+    name: "瓦斯彈",
+    oriType: 109,
+    typeN: 2,
+}, {
+    n: 110,
+    name: "雙彈瓦斯",
+    oriType: 109,
+    typeN: 2,
+}, {
+    n: 111,
+    name: "獨角犀牛",
+    oriType: 111,
+    typeN: 2,
+}, {
+    n: 112,
+    name: "鑽角犀獸",
+    oriType: 111,
+    typeN: 2,
+}, {
+    n: 113,
+    name: "吉利蛋",
+    oriType: 113,
+    typeN: 1,
+}, {
+    n: 114,
+    name: "蔓藤怪",
+    oriType: 114,
+    typeN: 1,
+}, {
+    n: 115,
+    name: "袋龍",
+    oriType: 115,
+    typeN: 1,
+}, {
+    n: 116,
+    name: "墨海馬",
+    oriType: 116,
+    typeN: 2,
+}, {
+    n: 117,
+    name: "海刺龍",
+    oriType: 116,
+    typeN: 2,
+}, {
+    n: 118,
+    name: "角金魚",
+    oriType: 118,
+    typeN: 2,
+}, {
+    n: 119,
+    name: "金魚王",
+    oriType: 118,
+    typeN: 2,
+}, {
+    n: 120,
+    name: "海星星",
+    oriType: 120,
+    typeN: 2,
+}, {
+    n: 121,
+    name: "寶石海星",
+    oriType: 120,
+    typeN: 2,
+}, {
+    n: 122,
+    name: "吸盤魔偶",
+    oriType: 122,
+    typeN: 1,
+}, {
+    n: 123,
+    name: "飛天螳螂",
+    oriType: 123,
+    typeN: 1,
+}, {
+    n: 124,
+    name: "迷唇姐",
+    oriType: 124,
+    typeN: 1,
+}, {
+    n: 125,
+    name: "電擊獸",
+    oriType: 125,
+    typeN: 1,
+}, {
+    n: 126,
+    name: "鴨嘴火龍",
+    oriType: 126,
+    typeN: 1,
+}, {
+    n: 127,
+    name: "大甲",
+    oriType: 127,
+    typeN: 1,
+}, {
+    n: 128,
+    name: "肯泰羅",
+    oriType: 128,
+    typeN: 1,
+}, {
+    n: 129,
+    name: "鯉魚王",
+    oriType: 129,
+    typeN: 2,
+}, {
+    n: 130,
+    name: "暴鯉龍",
+    oriType: 129,
+    typeN: 2,
+}, {
+    n: 131,
+    name: "乘龍",
+    oriType: 131,
+    typeN: 2,
+}, {
+    n: 132,
+    name: "百變怪",
+    oriType: 132,
+    typeN: 1,
+}, {
+    n: 133,
+    name: "伊布",
+    oriType: 133,
+    typeN: 4,
+}, {
+    n: 134,
+    name: "水精靈",
+    oriType: 133,
+    typeN: 4,
+}, {
+    n: 135,
+    name: "雷精靈",
+    oriType: 133,
+    typeN: 4,
+}, {
+    n: 136,
+    name: "火精靈",
+    oriType: 133,
+    typeN: 4,
+}, {
+    n: 137,
+    name: "3D龍",
+    oriType: 137,
+    typeN: 1,
+}, {
+    n: 138,
+    name: "菊石獸",
+    oriType: 138,
+    typeN: 2,
+}, {
+    n: 139,
+    name: "多刺菊石獸",
+    oriType: 138,
+    typeN: 2,
+}, {
+    n: 140,
+    name: "化石盔",
+    oriType: 140,
+    typeN: 2,
+}, {
+    n: 141,
+    name: "鐮刀盔",
+    oriType: 140,
+    typeN: 2,
+}, {
+    n: 142,
+    name: "化石翼龍",
+    oriType: 142,
+    typeN: 1,
+}, {
+    n: 143,
+    name: "卡比獸",
+    oriType: 143,
+    typeN: 1,
+}, {
+    n: 144,
+    name: "急凍鳥",
+    oriType: 144,
+    typeN: 1,
+}, {
+    n: 145,
+    name: "閃電鳥",
+    oriType: 145,
+    typeN: 1,
+}, {
+    n: 146,
+    name: "火焰鳥",
+    oriType: 146,
+    typeN: 1,
+}, {
+    n: 147,
+    name: "迷你龍",
+    oriType: 147,
+    typeN: 3,
+}, {
+    n: 148,
+    name: "哈克龍",
+    oriType: 147,
+    typeN: 3,
+}, {
+    n: 149,
+    name: "快龍",
+    oriType: 147,
+    typeN: 3,
+}, {
+    n: 150,
+    name: "超夢",
+    oriType: 150,
+    typeN: 1,
+}, {
+    n: 151,
+    name: "夢幻",
+    oriType: 151,
+    typeN: 1,
+}
+]

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonGuess</title>
+    <script src="./_js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="./css/box.css">
+    <link rel="stylesheet" href="./css/que_ans.css">
+</head>
+
+<body>
+    <script src="./_js/pokemon.js"></script>
+    <div class="full_page">
+        <div class="box">
+            <div id="box1" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./img/006.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box2" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box3" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box4" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box5" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box6" class="que_box"></div>
+            <div id="box7" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box8" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box9" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box10" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box11" class="que_box">
+                <div class="container">
+                    <img class="que_img" src="./2fe157db59153af8abd636ab03c7df6f28b08242.png" alt="que1"
+                        style="width:100%;max-width:300px;color:rgba(0,0,0,0.9);">
+                    <div class="overlay">猜猜我是誰</div>
+                </div>
+                <!-- The Modal -->
+                <div id="ans_modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="ans_img" id="ans_img1">
+
+                    <div id="caption">
+                        <input type="text" style="font-size:xx-large;padding:10px" size="30vw">
+                        <br><button class="ansBtn">Answer</button>
+                        <br><button class="hintBtn" onclick="this.disabled=true">Hint</button><!-- 只能按一次 -->
+                    </div>
+                </div>
+            </div>
+            <div id="box12" class="que_box"></div>
+        </div>
+    </div>
+
+    <script>
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        function getRandom() { //設初始值c = 0
+            return Math.floor(Math.random() * 151 + 1)
+        }
+        $('.que_img').click(function () {
+            $("#ans_modal").css("display", "block")
+            $("#ans_img1").prop("src", this.src)
+        })
+
+        // When the user clicks on <span> (x), close the modal
+        $(".close").click(function () {
+            $("#ans_modal").css("display", "none")
+        })
+
+        $(".ansBtn").click(function () {
+            if ($("#caption input").val()) {
+                $(".overlay").text($("#caption input").val())
+                $(".overlay").css("opacity", 1)
+            } else {
+                $(".overlay").css("opacity", 0)
+            }
+            $("#ans_modal").css("display", "none");
+        })
+
+        $(".hintBtn").click(function () {
+            $(".ans_img").after("<img class='img_hint' src='img/002.png'>")
+            $(".hintBtn").addClass('hint_chosen')
+        })
+
+    </script>
+</body>
+
+</html>

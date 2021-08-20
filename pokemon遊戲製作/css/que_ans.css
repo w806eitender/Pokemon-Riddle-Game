@@ -1,0 +1,235 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.que_img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  filter: contrast(0);
+}
+.que_img:hover {opacity: 0.7;}
+.container {
+  position: relative;
+  max-width: auto;
+  /* 決定圖片大小 */
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  /* background: rgba(255, 0, 0, 0.6); */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 2%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  text-align: center;
+}
+
+/* Modal Content */
+.ans_img {
+  margin: auto;
+  display: block;
+  width: 20%;
+  max-width: 700px;
+  filter: contrast(0);
+}
+input{
+  font-size: xx-large;
+  padding: 10px;
+  text-align: center;
+}
+.img_hint {
+  margin: auto;
+  display: inline-block;
+  align-content: center;
+  width: 10%;
+  max-width: 700px;
+  filter: contrast(0);
+}
+.show{
+  transition: 0.3s;
+  filter:none
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/*The Answer button */
+.ansBtn,.hintBtn,.hintBtn2{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: xx-large;
+}
+
+.ansBtn:hover,.hintBtn:hover,.hintBtn2:hover {
+  background-color: #555;
+  color: white;
+}
+/*The Hint button */
+.hint_chosen {
+  background-color: rgb(90, 8, 8);
+  color:black;
+  text-decoration: line-through;
+  clip-path: polygon(20% 0%, 0% 20%, 20% 50%, 0% 80%, 20% 100%, 50% 80%, 80% 100%, 100% 80%, 80% 50%, 100% 20%, 80% 0%, 51% 20%);
+}
+/* Add Animation */
+.ans_img, #caption, .show {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.img_hint {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 2s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  color: #f1f1f1;
+  font-size: 100px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .ans_img {
+    width: 100%;
+  }
+}
+
+/* reset button */
+#resetBtn {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #04AA6D;
+  border: none;
+  padding: 0;
+}
+#resetBtn:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+#resetImg{
+  width: 98%;
+  object-fit: contain;
+}
+.resetImg_lock{
+  filter : brightness(30%);
+  -webkit-filter : brightness(30%);
+}
+#resetImg:hover{
+  -webkit-filter:contrast(3);
+  filter: contrast(3);
+}
+
+/* Hint img */
+#hintImg{
+  width: 98%;
+  object-fit: contain;
+}
+
+/* countdown */
+p {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 0px;
+  color:azure;
+  margin-top: 10vh;
+}
+
+/* submit button */
+.submitbtn {
+  padding: 10px 30%;
+  font-size: 10vh;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 9vh;
+}
+
+.submitbtn:hover {background-color: #3e8e41}
+
+.submitbtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+video{
+  margin: auto;
+  display: block;
+  width: 70%;
+}
